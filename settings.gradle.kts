@@ -12,5 +12,6 @@ hytale {
         Group = "HytaleModding"
         Name = "DisabledDurability"
         Main = "dev.hytalemodding.disableddurability.DisabledDurability"
+        Dependencies = mapOf("Hytale:EntityModule" to "*")
     }
 }

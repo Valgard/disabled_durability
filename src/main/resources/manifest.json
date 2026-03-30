@@ -6,7 +6,9 @@
     "Authors": [],
     "DisabledByDefault": false,
     "IncludesAssetPack": false,
-    "Dependencies": {},
+    "Dependencies": {
+        "Hytale:EntityModule": "*"
+    },
     "OptionalDependencies": {},
     "Main": "dev.hytalemodding.disableddurability.DisabledDurability"
 }
