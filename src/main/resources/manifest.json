@@ -1,0 +1,12 @@
+{
+    "Group": "HytaleModding",
+    "Name": "DisabledDurability",
+    "Version": "1.0.0",
+    "Description": "Deaktiviert Haltbarkeit für alle Tools.",
+    "Authors": [],
+    "DisabledByDefault": false,
+    "IncludesAssetPack": false,
+    "Dependencies": {},
+    "OptionalDependencies": {},
+    "Main": "dev.hytalemodding.disableddurability.DisabledDurability"
+}
