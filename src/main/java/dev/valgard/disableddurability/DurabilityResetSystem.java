@@ -1,4 +1,4 @@
-package dev.hytalemodding.disableddurability;
+package dev.valgard.disableddurability;
 
 import com.hypixel.hytale.component.ArchetypeChunk;
 import com.hypixel.hytale.component.CommandBuffer;

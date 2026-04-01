@@ -1,18 +1,18 @@
 {
-    "Group": "HytaleModding",
+    "Group": "Valgard",
     "Name": "DisabledDurability",
     "Version": "1.0.0",
-    "Description": "Disables durability for all tools.",
+    "Description": "Disables durability on all breakable tools, weapons and armour.",
     "Authors": [
         {
             "Name": "Valgard"
         }
     ],
     "DisabledByDefault": false,
-    "IncludesAssetPack": false,
+    "IncludesAssetPack": true,
     "Dependencies": {
         "Hytale:EntityModule": "*"
     },
     "OptionalDependencies": {},
-    "Main": "dev.hytalemodding.disableddurability.DisabledDurability"
+    "Main": "dev.valgard.disableddurability.DisabledDurability"
 }

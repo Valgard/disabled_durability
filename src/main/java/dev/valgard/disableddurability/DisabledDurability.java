@@ -1,4 +1,4 @@
-package dev.hytalemodding.disableddurability;
+package dev.valgard.disableddurability;
 
 import com.hypixel.hytale.server.core.plugin.JavaPlugin;
 import com.hypixel.hytale.server.core.plugin.JavaPluginInit;

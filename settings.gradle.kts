@@ -1,4 +1,4 @@
-rootProject.name = "dev.hytalemodding"
+rootProject.name = "dev.valgard"
 
 plugins {
     id("dev.scaffoldit") version "0.2.+"
@@ -9,9 +9,9 @@ hytale {
     useVersion("latest")
 
     manifest {
-        Group = "HytaleModding"
+        Group = "Valgard"
         Name = "DisabledDurability"
-        Main = "dev.hytalemodding.disableddurability.DisabledDurability"
+        Main = "dev.valgard.disableddurability.DisabledDurability"
         Dependencies = mapOf("Hytale:EntityModule" to "*")
     }
 }
