@@ -1,25 +1,40 @@
-# Disabled Durability
+<p align="center">
+  <img src="sources/Logo 1.png" alt="Disabled Durability Logo" width="128">
+</p>
 
-A Hytale server plugin that disables item durability for all players. Every server tick, all items in player inventories have their durability reset — tools and equipment never break.
+<h1 align="center">Disabled Durability</h1>
+
+<p align="center">
+  A Hytale server plugin that disables item durability for all players — tools and equipment never break.
+</p>
+
+---
+
+## Features
+
+- Resets durability for **all items** across all inventory sections (Hotbar, Storage, Armor, Utility, Tool, Backpack)
+- Runs every server tick — items are always protected, even newly acquired ones
+- Zero configuration — just install and forget
 
 ## How It Works
 
-The plugin registers an ECS ticking system (`DurabilityResetSystem`) that runs **before** `PlayerSendInventorySystem` each tick. It scans all inventory sections (Hotbar, Storage, Armor, Utility, Tool, Backpack) and sets `maxDurability` to `0` for every non-unbreakable item stack.
+The plugin registers an ECS ticking system (`DurabilityResetSystem`) that runs **before** `PlayerSendInventorySystem` each tick. It sets `maxDurability` to `0` for every non-unbreakable item stack in every player's inventory.
 
-## Requirements
+## Installation
 
-- Java 25 (Amazon Corretto)
-- Gradle 9.2
+1. Download the JAR matching your server version from [Releases](../../releases)
+2. Place it in your server's `mods/` directory
+3. Start (or restart) the server
 
-Both can be installed via [asdf](https://asdf-vm.com/) using the `.tool-versions` file in this repository.
+## Building from Source
 
-## Build
+Requires **Java 25** (Amazon Corretto) and **Gradle 9.2**. Both can be installed via [asdf](https://asdf-vm.com/) using the `.tool-versions` file in this repository.
 
 ```bash
-# Build for the latest supported Hytale version
+# Single build
 ./gradlew build
 
-# Build JARs for all supported versions at once
+# Build for all supported Hytale versions
 ./gradlew buildAll
 
 # Build for a specific Hytale server version
@@ -28,24 +43,12 @@ Both can be installed via [asdf](https://asdf-vm.com/) using the `.tool-versions
 
 Output JARs are placed in `build/libs/`.
 
-## Installation
+## Compatibility
 
-Copy the built JAR into your Hytale server's `mods/` directory.
+| Plugin Version | Hytale Server Version |
+|---|---|
+| 1.0.0 | 2026.03.26-89796e57b |
 
-The plugin depends on `Hytale:EntityModule` and will be enabled by default.
+## License
 
-## Development
-
-```bash
-# Set up the local dev server (one-time)
-./gradlew setupServer
-
-# Run the dev server (use -Ddebug for hot-swap debugging)
-./gradlew runServer
-```
-
-## Supported Versions
-
-| Hytale Server Version    |
-|--------------------------|
-| `2026.03.26-89796e57b`   |
+All rights reserved.
