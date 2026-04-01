@@ -14,6 +14,6 @@ public class DisabledDurability extends JavaPlugin {
     @Override
     protected void setup() {
         getEntityStoreRegistry().registerSystem(new DurabilityResetSystem());
-        getLogger().atInfo().log("Disabled Durability aktiv — Haltbarkeit für alle Tools deaktiviert.");
+        getLogger().atInfo().log("Disabled Durability active — durability disabled for all tools.");
     }
 }

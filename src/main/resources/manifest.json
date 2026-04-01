@@ -2,8 +2,12 @@
     "Group": "HytaleModding",
     "Name": "DisabledDurability",
     "Version": "1.0.0",
-    "Description": "Deaktiviert Haltbarkeit für alle Tools.",
-    "Authors": [],
+    "Description": "Disables durability for all tools.",
+    "Authors": [
+        {
+            "Name": "Valgard"
+        }
+    ],
     "DisabledByDefault": false,
     "IncludesAssetPack": false,
     "Dependencies": {
