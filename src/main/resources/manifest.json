@@ -1,15 +1,15 @@
 {
     "Group": "Valgard",
     "Name": "DisabledDurability",
-    "Version": "1.0.0",
-    "Description": "Disables durability on all breakable tools, weapons and armour.",
+    "Version": "1.0.1",
+    "Description": "Disables durability on all breakable tools, weapons and armour. Reimplementation of Serilum's mod for Hytale Update 4.",
     "Authors": [
         {
             "Name": "Valgard"
         }
     ],
     "DisabledByDefault": false,
-    "IncludesAssetPack": true,
+    "IncludesAssetPack": false,
     "Dependencies": {
         "Hytale:EntityModule": "*"
     },

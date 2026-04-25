@@ -1,5 +1,5 @@
 val targetVersion = providers.gradleProperty("targetVersion").getOrElse("")
-val modVersion = "1.0.0"
+val modVersion = "1.0.1"
 val suffix = if (targetVersion.isNotEmpty()) "+$targetVersion" else ""
 
 val hytaleVersions = listOf("2026.03.26-89796e57b")

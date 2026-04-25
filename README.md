@@ -2,10 +2,14 @@
   <img src="sources/Logo 1.png" alt="Disabled Durability Logo" width="128">
 </p>
 
-<h1 align="center">Disabled Durability</h1>
+<h1 align="center">Disabled Durability (Update 4)</h1>
 
 <p align="center">
   A Hytale server plugin that disables item durability for all players — tools and equipment never break.
+</p>
+
+<p align="center">
+  <em>An independent reimplementation of <a href="https://github.com/Serilum-Hytale/Disabled-Durability">Serilum's Disabled Durability</a>, ported for Hytale Update 4.</em>
 </p>
 
 ---
@@ -47,7 +51,17 @@ Output JARs are placed in `build/libs/`.
 
 | Plugin Version | Hytale Server Version |
 |---|---|
+| 1.0.1 | 2026.03.26-89796e57b |
 | 1.0.0 | 2026.03.26-89796e57b |
+
+## Credits
+
+Original concept and implementation by **[Serilum](https://github.com/Serilum-Hytale/Disabled-Durability)**. This plugin is a clean-room reimplementation: it reproduces the **behavior** of Serilum's mod and adapts it to Hytale Update 4, but contains **no source code derived from the original**. All credit for the original idea goes to Serilum.
+
+### Differences from the Original
+
+- **No configuration file.** Serilum's mod exposes a `disableItemDurability` toggle; this reimplementation is hardcoded — install means active, uninstall means inactive.
+- **Update 4 UI compatibility.** The original repairs items every inventory-change event, which was visually invisible pre-Update-4 but would cause durability-bar flicker on Update 4. This plugin instead sets `MaxDurability` to `0`, which suppresses the bar entirely and matches the original's *intended* visual behavior on the new platform.
 
 ## License
 
